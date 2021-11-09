@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">DemoTikTok</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="selector_confirm">确定</string>
+    <string name="selector_cancel">取消</string>
+    <string name="selector_hint">提示</string>
+    <string name="sd_card_not_mounted">sd卡未挂载</string>
+    <string name="selector_permissions_hint">该相册需要赋予访问存储和拍照的权限，请到“设置”>“应用”>“权限”中配置权限。</string>
+</resources>
