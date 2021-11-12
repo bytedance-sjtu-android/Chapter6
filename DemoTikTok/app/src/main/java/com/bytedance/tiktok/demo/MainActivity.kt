@@ -8,6 +8,7 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import com.bytedance.tiktok.demo.imageselector.ImageSelectActivity
+import com.bytedance.tiktok.demo.provider.ProviderDemoActivity
 import com.bytedance.tiktok.demo.publish.PublishEditActivity
 import com.bytedance.tiktok.demo.ui.discover.DiscoverFragment
 import com.bytedance.tiktok.demo.ui.home.HomeFragment
@@ -62,8 +63,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         mineTab.setOnLongClickListener {
-            val intent = Intent(this, ImageSelectActivity::class.java)
-//            val intent = Intent(this, ProviderDemoActivity::class.java)
+//            val intent = Intent(this, ImageSelectActivity::class.java)
+            val intent = Intent(this, ProviderDemoActivity::class.java)
             startActivity(intent)
             true
         }
