@@ -13,7 +13,6 @@ import com.bytedance.tiktok.demo.publish.PublishEditActivity
 import com.bytedance.tiktok.demo.ui.discover.DiscoverFragment
 import com.bytedance.tiktok.demo.ui.home.HomeFragment
 import com.bytedance.tiktok.demo.ui.home.HomeViewModel
-import com.bytedance.tiktok.demo.ui.mine.MineFragment
 import com.bytedance.tiktok.demo.ui.notifications.NotificationsFragment
 
 
@@ -58,15 +57,14 @@ class MainActivity : AppCompatActivity() {
         notificationTab.setOnClickListener {
             switchFragment(NotificationsFragment.TAG)
         }
-        mineTab.setOnClickListener {
-            switchFragment(MineFragment.TAG)
-        }
+//        mineTab.setOnClickListener {
+//            switchFragment(MineFragment.TAG)
+//        }
 
-        mineTab.setOnLongClickListener {
-//            val intent = Intent(this, ImageSelectActivity::class.java)
-            val intent = Intent(this, ProviderDemoActivity::class.java)
+        mineTab.setOnClickListener {
+            val intent = Intent(this, ImageSelectActivity::class.java)
+//            val intent = Intent(this, ProviderDemoActivity::class.java)
             startActivity(intent)
-            true
         }
 
     }

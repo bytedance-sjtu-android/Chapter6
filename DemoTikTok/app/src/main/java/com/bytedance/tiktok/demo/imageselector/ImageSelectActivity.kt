@@ -28,7 +28,7 @@ class ImageSelectActivity: AppCompatActivity()  {
         const val PERMISSION_WRITE_EXTERNAL_REQUEST_CODE = 0x00000011
     }
 
-    lateinit var targetOutputCropImageFile: File
+    private lateinit var targetOutputCropImageFile: File
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
